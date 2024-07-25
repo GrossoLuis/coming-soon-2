@@ -15,6 +15,10 @@ form.addEventListener("submit", function(event) {
     .then(response => {
         if (response.ok) {
             modal.style.display = "block";
+
+            setTimeout(function() {
+                location.reload();
+            }, 2000);
         }
     })
     .catch(error => {
