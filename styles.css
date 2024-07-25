@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #273965;
+    color: white;
+    padding: 20px;
+}
+
+.text-container img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.div-form-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.div-form-container p {
+    font-family: "Montserrat", sans-serif;
+    width: fit-content;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+
+.div-form-container form {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.custom-input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 40px;
+}
+
+.action-button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #273965;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.action-button:hover, .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #273965;
+    color: white;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+    }
+
+    .text-container {
+        width: 50%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .text-container img {
+        margin-top: 220px;
+    }
+
+    .text-container h1 {
+        font-size: 40px;
+        margin-top: 90px;
+    }
+
+    .div-form-container {
+        width: 50%;
+    }
+
+    .div-form-container p {
+        font-size: 22px;
+        line-height: 30px;    
+        width: fit-content;
+        padding: 0px 50px;
+
+    }
+
+ 
+    .custom-input {
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        color: black;
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        width: 100%;
+        height: 40px;
+    }
+    
+    .action-button {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        color: white;
+        background-color: #273965;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .action-button:hover, .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #273965;
+        color: white;
+    }
+    
+    input::placeholder {
+        color: grey;
+    }
+}
+
+
+
+/* Modal CSS */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color:#273965;
+    color: white;
+    margin: 15% auto; 
+    padding: 20px 50px;
+    border: 1px solid #273965;
+    width: 80%; 
+    max-width: 300px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.modal-content p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.close {
+    color: white;
+    float: inline-end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
