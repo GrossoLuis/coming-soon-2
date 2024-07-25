@@ -103,17 +103,23 @@ input::placeholder {
 @media (min-width: 768px) {
     .main-container {
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .text-container {
         width: 50%;
         height: 100%;
         padding: 0;
+        display: flex;
+        justify-content: center;
     }
 
-    .text-container img {
+    /* .text-container img {
         margin-top: 220px;
-    }
+    } */
+
+   
 
     .text-container h1 {
         font-size: 35px;
@@ -132,6 +138,8 @@ input::placeholder {
         width: fit-content;
         padding: 0px 50px;
         font-weight: 400;
+        text-align: justify;
+
 
     }
 
