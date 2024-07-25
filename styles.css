@@ -116,8 +116,10 @@ input::placeholder {
     }
 
     .text-container h1 {
-        font-size: 40px;
-        margin-top: 90px;
+        font-size: 35px;
+        margin-top: 40px;
+        font-weight: 600;
+        padding: 0px 10px;
     }
 
     .div-form-container {
